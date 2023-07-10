@@ -1,0 +1,27 @@
+{
+    "name": "名前",
+    "hp": 0,
+    "speed" : 0,
+    "type" : [
+        "cat"
+    ],
+    "animetion": "アニメーションのファイル名.bcea",
+    "range": {
+        "size": -320,
+        "sensing": 0
+    },
+    "interval": 0,
+    "attack": [
+        {
+            "damage": 0,
+            "invoke-frame": 1 ,
+            "ability-id": [
+                {
+                    "id": 0,
+                    "paramater": {}
+                }
+            ],
+            "range": ["entity-size", 0]
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+dependencies {
+    implementation(fileTree(dir: 'libs', include: ['AApainter.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-glfw.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-glfw-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-glfw-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-glfw-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-jawt.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-jawt-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-jawt-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-nanovg.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-nanovg-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-nanovg-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-nanovg-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openal.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openal-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openal-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openal-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opencl.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opencl-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opencl-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengl.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengl-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengl-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengl-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengles.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengles-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengles-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-opengles-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openvr.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openvr-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openvr-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-openvr-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-sources.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-stb.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-stb-javadoc.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-stb-natives-windows.jar']))
+    implementation(fileTree(dir: 'libs/lwjgl', include: ['lwjgl-stb-sources.jar']))
+    implementation(fileTree(dir: 'libs', include: ['sframeparts-1.3.3.jar']))
+    implementation(fileTree(dir: 'libs', include:['jackson-annotations-2.13.3.jar']))
+    implementation(fileTree(dir: 'libs', include:['jackson-core-2.13.3.jar']))
+    implementation(fileTree(dir: 'libs', include:['jackson-databind-2.13.3.jar']))
+    implementation 'org.jetbrains:annotations:20.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

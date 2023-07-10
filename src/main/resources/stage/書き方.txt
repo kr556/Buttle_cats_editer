@@ -1,0 +1,9 @@
+{
+  "name": "名前",
+  "size": ステージ幅,
+  "limit-c" : 味方の出撃制限,
+  "limit-e" : 敵の出撃制限,
+  "castle-c" : "味方の城ID",
+  "castle-e" : "敵の城ID",
+  "back-ground" : "背景のID"
+}

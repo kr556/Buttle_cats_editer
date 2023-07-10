@@ -1,0 +1,8 @@
+{
+  "size": 3000,
+  "limit-c" : 50,
+  "limit-e" : 50,
+  "castle-c" : "000",
+  "castle-e" : "000",
+  "back-ground" : "000b"
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AApainter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/AApainter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
